@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .sistema_inventario import listar_equipos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('equipos/', listar_equipos, name="listar_equipos"),
+    path('carga_de_datos', cargar_equipos, name="cargar_equipo"),
 ]

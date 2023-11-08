@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Equipos(models.Model):
-    id = models.IntegerField(primary_key=True)
     nombre = models.CharField(max_length=50)
     fecha_ingreso = models.DateField
     numero_serie = models.IntegerField(null=True, blank=True)
